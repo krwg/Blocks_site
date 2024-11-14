@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои заказы</title>
+    <link rel="stylesheet" href="dark.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="d.main.html" class="logo">  
+                <h1>
+                    <img src="logo.png" alt="Логотип" class="logo-image">
+                    <span class="logo-text">ГлавСтройБлок</span>
+                </h1>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="d.tovary.html">Товары</a></li>
+                    <li><a href="d.mesta.html">Места хранения</a></li>
+                    <li><a href="d.priem.html">Приемка товаров</a></li>
+                    <li><a href="d.vidacha.html">Выдача</a></li>
+                    <li><a href="d.pechat.html">Печать</a></li>
+                    <li><a href="d.settings.html">Настройки</a></li>
+                    <li class="user-info">
+                        <img src="avatar.jpg" alt="Аватар" class="avatar">
+                        <span>krwg</span>  
+                        <!-- имя пользователя -->
+                    </li>
+                    <li class="logout"><a href="d.log.html">Выйти из аккаунта</a></li>
+                </ul>
+            </nav>
+            <section class="content">
+                <h2>Мои заказы</h2>
+                <div class="orders-list">
+                    
+                    <div class="order" id="order-1">
+                        <h3>Заказ №1233</h3>
+                        <p>Статус: Ожидает подтверждения</p>
+                        <p>Дата: 12.11.2024</p>
+                        <p>Поставщик: Поставщик 1</p>
+                        <p>Товары: Блок бетонный 200х200х400</p>
+                        <p>Примечания: </p>
+                        <button type="button" class="accept-button" data-order-id="order-1">Принять</button>
+                        <button type="button" class="delete-button" data-order-id="order-1">Удалить</button>
+                    </div>
+                    
+                    <div class="order" id="order-2">
+                        <h3>Заказ №1234</h3>
+                        <p>Статус: Ожидает подтверждения</p>
+                        <p>Дата: 10.11.2024</p>
+                        <p>Поставщик: Поставщик 2</p>
+                        <p>Товары: Блок бетонный 100х200х400</p>
+                        <p>Примечания: </p>
+                        <button type="button" class="accept-button" data-order-id="order-1">Принять</button>
+                        <button type="button" class="delete-button" data-order-id="order-1">Удалить</button>
+                    </div>
+                    
+                </div>
+                <br>
+                <br>
+                <a href="d.main.html" class="button">
+                    <span>Назад</span>
+                </a>
+                
+            </section>           
+
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="container">
+            <p>&copy; ГлавСтройБлок, 2024</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

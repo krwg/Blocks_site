@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прием</title>
+    <link rel="stylesheet" href="dark.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="d.main.html" class="logo">  
+                <h1>
+                    <img src="logo.png" alt="Логотип" class="logo-image">
+                    <span class="logo-text">ГлавСтройБлок</span>
+                </h1>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="d.tovary.html">Товары</a></li>
+                    <li><a href="d.mesta.html">Места хранения</a></li>
+                    <li><a href="d.priem.html" class="active">Приемка товаров</a></li>
+                    <li><a href="d.vidacha.html">Выдача</a></li>
+                    <li><a href="d.pechat.html">Печать</a></li>
+                    <li><a href="d.settings.html">Настройки</a></li>
+                    <li class="user-info">
+                        <img src="avatar.jpg" alt="Аватар" class="avatar">
+                        <span>krwg</span>  
+                        <!-- имя пользователя -->
+                    </li>
+                    <li class="logout"><a href="d.log.html">Выйти из аккаунта</a></li>
+                </ul>
+            </nav>
+            <section class="content">
+                <h2>Приемка товаров</h2>
+                <form id="receiving-form">
+                    <div class="form-group">
+                        <label for="supplier">Поставщик:</label>
+                        <select id="supplier" name="supplier" required>
+                            <option value="">Выберите поставщика</option>
+                            
+                        </select>
+                        <button type="button" id="add-supplier">Добавить поставщика</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-number">Номер заказа:</label>
+                        <input type="text" id="order-number" name="order-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Дата приемки:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="items">Товары:</label>
+                        <select id="items" name="items" multiple required>
+                            <option value="">Выберите товары или добавьте его</option>
+                            <option value="Товар 1">Блок бетонный 200х200х400</option>
+                            <option value="Товар 2">Блок бетонный 100х200х400</option>
+                           
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Примечания:</label>
+                        <textarea id="notes" name="notes" placeholder="Введите примечания"></textarea>
+                    </div>
+                    <button type="submit" class="button">Принять товары</button>
+                </form>
+            </section>           
+
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="container">
+            <p>&copy; ГлавСтройБлок, 2024</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

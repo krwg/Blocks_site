@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="main.html" class="logo"> 
+                    <img src="logo.png" alt="Логотип" class="logo-image">
+                    <span class="logo-text">ГлавСтройБлок</span>
+                </h1>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="tovary.html">Товары</a></li>
+                    <li><a href="mesta.html">Места хранения</a></li>
+                    <li><a href="priem.html">Приемка товаров</a></li>
+                    <li><a href="vidacha.html">Выдача</a></li>
+                    <li><a href="pechat.html">Печать</a></li>
+                    <li><a href="settings.html" class="active">Настройки</a></li>
+                    <li class="user-info">
+                        <img src="avatar.jpg" alt="Аватар" class="avatar">
+                        <span>krwg</span>  
+                        <!-- имя пользователя -->
+                    </li>
+                    <li class="logout"><a href="log.html">Выйти из аккаунта</a></li>
+                </ul>
+            </nav>
+
+            <section class="content">
+                <h2>Настройки</h2>
+
+                <h3>Выбор темы:</h3>
+                  <a href="d.settings.html">Темная тема</a>
+                <form id="settings-form">
+                    <div class="form-group">
+                        <label for="username">Имя пользователя:</label>
+                        <input type="text" id="username" name="username" value="Айдамир" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Новый пароль:</label>
+                        <input type="password" id="password" name="password" placeholder="Введите новый пароль">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Подтверждение пароля:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Повторите новый пароль">
+                    </div>
+                    <button type="submit" class="button">Сохранить</button>
+                    <div id="message"></div>  
+                </form>
+            </section>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="container">
+            <p>&copy; ГлавСтройБлок, 2024</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

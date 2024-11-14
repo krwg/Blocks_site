@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход | Регистрация</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <header>
+            <div class="container">
+                <a href="main.html" class="logo">
+                    <h1>
+                        <img src="logo.png" alt="Логотип" class="logo-image">
+                        <span class="logo-text">ГлавСтройБлок</span>
+                    </h1>
+                </a>
+            </div>
+        </a>
+    
+        </header>
+    </header>
+<main>
+    <div class="container">
+        <section class="auth-section">
+                <h2>Вход | Регистрация</h2>
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Вход</button>
+                    <button class="auth-tab" data-tab="register">Регистрация</button>
+                </div>
+
+                <div class="auth-form" id="login">  
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Введите email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль:</label>
+                            <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+                        </div>
+                        <button type="submit" class="button">Войти</button>
+                        <div class="social-login">
+                            <a href="#" class="social-button google">
+                                <img src="google-logo.png" alt="OpenAI" class="social-logo">
+                                <span>Войти с Google</span>
+                            </a>
+                            <a href="#" class="social-button apple">
+                                <img src="apple-logo.png" alt="OpenAI" class="social-logo">  
+                                <span>Войти с Apple</span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="auth-form" id="register"> 
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Имя пользователя:</label>
+                            <input type="text" id="username" name="username" placeholder="Введите имя пользователя" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Введите email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль:</label>
+                            <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Подтверждение пароля:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Повторите пароль" required>
+                        </div>
+                        <button type="submit" class="button">Зарегистрироваться</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+</main>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+        <div class="container">
+            <p>&copy; ГлавСтройБлок, 2024</p>
+        </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

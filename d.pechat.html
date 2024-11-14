@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Печать</title>
+
+    <link rel="stylesheet" href="dark.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="d.main.html" class="logo">  
+                <h1>
+                    <img src="logo.png" alt="Логотип" class="logo-image">
+                    <span class="logo-text">ГлавСтройБлок</span>
+                </h1>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="d.tovary.html">Товары</a></li>
+                    <li><a href="d.mesta.html">Места хранения</a></li>
+                    <li><a href="d.priem.html">Приемка товаров</a></li>
+                    <li><a href="d.vidacha.html">Выдача</a></li>
+                    <li><a href="d.pechat.html" class="active">Печать</a></li>
+                    <li><a href="d.settings.html">Настройки</a></li>
+                    <li class="user-info">
+                        <img src="avatar.jpg" alt="Аватар" class="avatar">
+                        <span>krwg</span>  
+                        <!-- имя пользователя -->
+                    </li>
+                    <li class="logout"><a href="d.log.html">Выйти из аккаунта</a></li>
+                </ul>
+            </nav>
+            <section class="content">
+                <h2>Печать</h2>
+
+                <h3>Доступные документы:</h3>
+                <ul id="documents-list">
+                    <li><a href="#">Заказ №12345</a></li>
+                    <li><a href="#">Счет-фактура №56789</a></li>
+                    <li><a href="#">Товарная накладная №90123</a></li>
+                    
+            
+                </ul>
+
+                <h3>Печать документа:</h3>
+                <form id="print-form">
+                    <div class="form-group">
+                        <label for="document">Документ:</label>
+                        <select id="document" name="document" required>
+                            <option value="">Выберите документ</option>
+                            <option value="Заказ №12345">Заказ №12345</option>
+                            <option value="Счет-фактура №56789">Счет-фактура №56789</option>
+                            <option value="Товарная накладная №90123">Товарная накладная №90123</option>
+                        
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="copies">Количество копий:</label>
+                        <input type="number" id="copies" name="copies" min="1" value="1" required>
+                    </div>
+                    <button type="button" class="button" id="print-pdf">Сохранить в PDF</button>
+                    <button type="submit" class="button">Распечатать</button>
+                </form>      
+                    
+                <h3>История печати:</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Документ</th>
+                            <th>Дата печати</th>
+                            <th>Количество копий</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Заказ №12345</td>
+                            <td>2023-10-26</td>
+                            <td>2</td>
+                        </tr>
+                     
+                    </tbody>
+                </table>
+            </section>           
+
+        </div>
+    </main>
+    <br>
+    <br>
+
+    <footer>
+        <div class="container">
+            <p>&copy; ГлавСтройБлок, 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

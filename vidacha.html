@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выдача</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="main.html" class="logo">  
+                <h1>
+                    <img src="logo.png" alt="Логотип" class="logo-image">
+                    <span class="logo-text">ГлавСтройБлок</span>
+                </h1>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="tovary.html">Товары</a></li>
+                    <li><a href="mesta.html">Места хранения</a></li>
+                    <li><a href="priem.html">Приемка товаров</a></li>
+                    <li><a href="vidacha.html" class="active">Выдача</a></li>
+                    <li><a href="pechat.html">Печать</a></li>
+                    <li><a href="settings.html">Настройки</a></li>
+                    <li class="user-info">
+                        <img src="avatar.jpg" alt="Аватар" class="avatar">
+                        <span>krwg</span>  
+                        <!-- имя пользователя -->
+                    </li>
+                    <li class="logout"><a href="log.html">Выйти из аккаунта</a></li>
+                </ul>
+            </nav>
+
+            <section class="content">
+                <h2>Выдача товаров</h2>
+
+                <h3>Доступные товары:</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Наименование</th>
+                            <th>Ед. измерения</th>
+                            <th>Количество</th>
+                            <th>Выбрать</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Блок бетонный 200х200х400</td>
+                            <td>шт</td>
+                            <td>100</td>
+                            <td><input type="checkbox" name="item-200x200x400"></td>
+                        </tr>
+                        <tr>
+                            <td>Блок бетонный 100х200х400</td>
+                            <td>шт</td>
+                            <td>50</td>
+                            <td><input type="checkbox" name="item-100x200x400"></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+                <h3>Информация о выдаче:</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="recipient">Получатель:</label>
+                        <input type="text" id="recipient" name="recipient" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Дата выдачи:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Примечания:</label>
+                        <textarea id="notes" name="notes" placeholder="Введите примечания"></textarea>
+                    </div>
+                    <button type="submit" class="button">Выдать</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <br>
+
+    <footer>
+        <div class="container">
+            <p>&copy; ГлавСтройБлок, 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
